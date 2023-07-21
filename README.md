@@ -1,2 +1,7 @@
-# flip-card-UI
-Flipping Card UI with HTML and CSS
+# flip-card-UI Design
+
+#### Languages
+
+-   [x] HTML
+-   [x] CSS
+-   [ ] JavaScript
