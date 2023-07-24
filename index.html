@@ -9,39 +9,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <div class="container">
-          <div class="card front-face">
-            <header>
-              <span class="logo">
+<section>
+    <div class="container">
+    <div class="card front-face">
+        <header>
+            <span class="logo">
                 <img src="images/logo.png" alt="logo">
                 <h5>Master Card</h5>
-              </span>
-              <img src="images/chip.png" alt="chip" class="chip">
-            </header>
-      
-            <div class="card-details">
-              <div class="name-number">
-                <label for="card-number">Card Number</label>
-                <input type="text" id="card-number" class="card-number" placeholder="1234 5678 9012 3456">
-      
-                <label for="name">Name</label>
-                <input type="text" id="name" class="name" placeholder="Mfundo Monchwe">
-      
-                <label for="valid-date">Valid Thru</label>
-                <input type="text" id="valid-date" class="valid-date" placeholder="06/23">
-              </div>
+            </span>
+            <img src="images/chip.png" alt="chip" class="chip">
+        </header>
+
+        <div class="card-details">
+            <div class="name-number">
+                <h6>Card Number</h6>
+                <h5 class="card-number">1234 5678 9012 3456</h5>
+                <h5 class="name"> Mfundo Monchwe</h5>
             </div>
-          </div>
-      
-          <div class="card back-face">
-            <h6> For customer service call +27 81 494 4104 or email us at diditmfundo@gmail.com</h6>
-            <span class="magnetic-strip"></span>
-            <div class="signature"><i>001</i></div>
-            <h5>Please make sure to enter correct details to avoid mistakes, verify twice before payment</h5>
-          </div>
+
+                <div class="valid-date">
+                    <h6>VALID THRU</h6>
+                    <h5>06/23</h5>
+                </div>
         </div>
-      </section>
-      <script src="feature.js"></script>
+    </div>
+
+    <div class="card back-face">
+    <h6> For customer service call +27 81 494 4104 or email us at diditmfundo@gmail.com</h6>
+    <span class="magnetic-strip"></span>
+    <div class="signature"><i>001</i></div>
+    <h5>Please make sure to enter correct details to avoid mistakes, verify twice before payment</h5>
+    </div>
+    </div>
+</section>
+    <!-- Fill-in form below the card -->
+    <section class="fill-in-form">
+        <h2>Fill in the form below to make payment</h2>
+        <label for="card-number">Card Number</label>
+        <input type="text" name="card-number" id="card-number" placeholder="**** **** **** ****">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter Card Holder">
+
+        <label for="valid-date">Valid Thru</label>
+        <input type="text" name="valid-date" id="valid-date" placeholder="MM/YY">
+    </section>
+<script src="feature.js"></script>
 </body>
 </html>

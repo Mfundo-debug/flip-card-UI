@@ -1,18 +1,21 @@
-const cardNumberInput = document.getElementById('card-number');
-const nameInput = document.getElementById('name');
-const validDateInput = document.getElementById('valid-date');
+// Get the elements
 const cardNumberElement = document.querySelector('.card-number');
 const nameElement = document.querySelector('.name');
-const validDateElement = document.querySelector('.valid-date h5');
+const validDateElement = document.querySelector('.valid-date');
 
-cardNumberInput.addEventListener('input', () => {
+// Function to update card details in real-time
+function updateCardDetails() {
   cardNumberElement.textContent = cardNumberInput.value;
-});
-
-nameInput.addEventListener('input', () => {
   nameElement.textContent = nameInput.value;
-});
-
-validDateInput.addEventListener('input', () => {
   validDateElement.textContent = validDateInput.value;
-});
+}
+
+// Add event listeners to input fields
+const cardNumberInput = document.getElementById('card-number');
+cardNumberInput.addEventListener('input', updateCardDetails);
+
+const nameInput = document.getElementById('name');
+nameInput.addEventListener('input', updateCardDetails);
+
+const validDateInput = document.getElementById('valid-date');
+validDateInput.addEventListener('input', updateCardDetails);
