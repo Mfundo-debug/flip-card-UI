@@ -155,26 +155,26 @@ h5.number {
 /* Add new class to style the fill-in form */
 .fill-in-form {
     margin-top: 20px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   text-align: center;
 }
 /* styl the labels and inputs in the fill-in form */
 
 .fill-in-form label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .fill-in-form input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+.fill-in-form input::placeholder {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 
